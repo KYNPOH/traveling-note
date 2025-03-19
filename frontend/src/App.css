@@ -1,0 +1,25 @@
+/* App.css */
+.App {
+  text-align: center;
+}
+
+.coverPage {
+  padding: 20px;
+}
+
+.coverPage h1 {
+  font-size: 2rem;
+}
+
+.coverPage img {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.confirmationPage {
+  padding: 20px;
+}
+
+.confirmationPage h2 {
+  font-size: 1.5rem;
+}
