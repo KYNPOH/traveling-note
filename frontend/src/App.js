@@ -1,14 +1,12 @@
 import React from "react";
+import DiaryBook from "./pages/DiaryBook";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import CoverPage from "./components/CoverPage";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<CoverPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <DiaryBook />
+    </div>
   );
 }
 

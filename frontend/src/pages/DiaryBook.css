@@ -1,0 +1,107 @@
+.book-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.introduction {
+  width: 40vw;
+  max-width: 400px;
+  min-width: 280px;
+  aspect-ratio: 4 / 5;
+  background-color: #78982f;
+  border: 2px solid #aaa;
+  font-size: min(2.2vw,24px);
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.book-wrapper {
+  width: 400px;
+  height: 500px;
+  min-width: 300px;
+  max-width: 1000px;
+  min-height: 400px;
+  max-height: 1536px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* オプションでスムーズなレイアウトに */
+  position: relative;
+  overflow: visible;
+}
+
+.flip-book {
+  width: 400px;
+  height: 500px;
+  min-width: 300px;
+  max-width: 1000px;
+  min-height: 400px;
+  max-height: 1536px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* オプションでスムーズなレイアウトに */
+  position: relative;
+  overflow: visible;
+}
+
+
+.CoverPage {
+  display: inline-block;
+  background-color: #78982f;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  width:100%;
+  height:100%;
+}
+
+.RulePage {
+  display: inline-block;
+  background-color: #78982f;
+  color: white;
+  font-weight: bold;
+  width:100%;
+  height:100%;
+}
+
+.DiaryPage{
+  display: inline-block;
+  background-color: #f2f1ea;
+  width:100%;
+  height:100%;
+}
+
+
+
+
+
+/* メディアクエリ：スマホ対応 */
+@media (max-width: 600px) {
+  .cover-only {
+    width: 80vw;
+    font-size: 18px;
+  }
+
+  .book-opened {
+    flex-direction: column;
+    width: 90vw;
+    aspect-ratio: auto;
+  }
+
+  .left-page, .right-page {
+    width: 100%;
+    padding: 20px;
+  }
+}
