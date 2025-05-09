@@ -9,9 +9,9 @@ import React, {
 } from 'react';
 import type { CSSProperties, ReactElement } from 'react';
 
-import { PageFlip } from '../../page-flip/PageFlip.ts';
-import { SizeType } from '../../page-flip/Settings.ts';
-import type { IFlipSetting, IEventProps } from './settings.ts';
+import { PageFlip } from '../../node_modules/page-flip/src/PageFlip';
+import { SizeType } from '../../node_modules/page-flip/src/Settings';
+import type { IFlipSetting, IEventProps } from './settings';
 
 interface IProps extends IFlipSetting, IEventProps {
   className?: string;

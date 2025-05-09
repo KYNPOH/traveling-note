@@ -7,6 +7,7 @@ import CoverPage from "../components/CoverPage";
 import RulePage from "../components/RulePage";
 import DiaryPage from "../components/DiaryPage";
 import EntryForm from "../components/EntryForm";
+import BackCoverPage from "../components/BackCoverPage";
 import NotAllowed from "../components/NotAllowed";
 import "./DiaryBook.css";
 
@@ -86,6 +87,7 @@ const DiaryBook = () => {
             {[1, 2, 3, 4, 5, 6, 7, 8].map((n) => (
               <div><DiaryPage key={n} date={`2025-04-0${n}`} content={`日記の内容 ${n}`} /></div>
             ))}
+            <div><BackCoverPage /></div>
 
             {/* 最後のページ：条件で表示を切り替える
             {isAuthorized ? (

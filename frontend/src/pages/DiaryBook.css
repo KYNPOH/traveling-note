@@ -10,9 +10,7 @@
 }
 
 .introduction {
-  width: 40vw;
-  max-width: 400px;
-  min-width: 280px;
+  width: 100vw;
   aspect-ratio: 4 / 5;
   background-color: #78982f;
   border: 2px solid #aaa;
